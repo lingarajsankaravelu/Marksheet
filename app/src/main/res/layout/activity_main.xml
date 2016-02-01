@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/parent_relative_layout_marksheet"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.hourglass.lingaraj.marksheet.MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/class_section_relative_layout"
+        android:layout_alignParentTop="true"
+        android:layout_width="fill_parent"
+        android:elevation="10dp"
+        android:layout_height="200dp">
+
+        <Spinner
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:id="@+id/class_name"
+            android:elevation="3dp"
+            android:layout_marginBottom="15dp"
+            android:layout_width="150dp"
+            android:dropDownSelector="@drawable/drop_down_spinner_selector"
+            android:background="@drawable/drop_down_spinner_background"
+            android:layout_height="50dp"/>
+
+        <Spinner
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="10dp"
+            android:id="@+id/section"
+            android:elevation="3dp"
+            android:dropDownSelector="@drawable/drop_down_spinner_selector"
+            android:background="@drawable/drop_down_spinner_background"
+            android:layout_width="150dp"
+            android:layout_height="50dp">
+        </Spinner>
+
+        <Spinner
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/class_name"
+            android:id="@+id/exam_name"
+            android:elevation="3dp"
+            android:layout_marginLeft="10dp"
+            android:dropDownSelector="@drawable/drop_down_spinner_selector"
+            android:background="@drawable/drop_down_spinner_background"
+            android:layout_width="150dp"
+            android:layout_height="50dp">
+        </Spinner>
+
+        <Spinner
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/section"
+            android:id="@+id/grade_system"
+            android:elevation="3dp"
+            android:dropDownSelector="@drawable/drop_down_spinner_selector"
+            android:background="@drawable/drop_down_spinner_background"
+            android:layout_width="150dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_height="50dp">
+        </Spinner>
+        <Spinner
+            android:layout_alignParentLeft="true"
+            android:visibility="gone"
+            android:layout_below="@+id/grade_system"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/marks_list"
+            android:elevation="3dp"
+            android:dropDownSelector="@drawable/drop_down_spinner_selector"
+            android:background="@drawable/drop_down_spinner_background"
+            android:layout_width="150dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_height="50dp">
+        </Spinner>
+
+
+
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_below="@+id/class_section_relative_layout"
+        android:background="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:elevation="5dp"
+        android:layout_height="80dp"
+        android:id="@+id/relativeLayout">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:paddingLeft="2dp"
+            android:paddingStart="2dp"
+            android:textSize="16dp"
+            android:text="V"
+            android:textColor="#FFFFFF"
+            android:id="@+id/class_selected"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/class_selected"
+            android:layout_toEndOf="@+id/class_selected"
+            android:paddingLeft="2dp"
+            android:paddingStart="2dp"
+            android:textSize="16dp"
+            android:text="A"
+            android:textColor="#FFFFFF"
+            android:id="@+id/section_selected"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/section_selected"
+            android:layout_toEndOf="@+id/section_selected"
+            android:paddingLeft="2dp"
+            android:paddingStart="2dp"
+            android:textSize="16dp"
+            android:text="Math"
+            android:textColor="#FFFFFF"
+            android:id="@+id/subject"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/subject"
+            android:layout_toEndOf="@+id/subject"
+            android:paddingLeft="5dp"
+            android:paddingStart="5dp"
+            android:textSize="16dp"
+            android:text="Half Yearly Marks"
+            android:textColor="#FFFFFF"
+            android:id="@+id/exam_type" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/exam_type"
+            android:layout_toEndOf="@+id/exam_type"
+            android:paddingLeft="5dp"
+            android:paddingStart="5dp"
+            android:textSize="16dp"
+            android:text="/"
+            android:textColor="#FFFFFF"
+            android:id="@+id/forward_slash" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/forward_slash"
+            android:layout_toEndOf="@+id/forward_slash"
+            android:paddingLeft="5dp"
+            android:paddingStart="5dp"
+            android:textSize="16dp"
+            android:text="100"
+            android:textColor="#FFFFFF"
+            android:id="@+id/totalMarks" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:elevation="5dp"
+        android:layout_below="@+id/class_section_relative_layout"
+        android:layout_height="500dp">
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/name"
+                android:layout_alignParentLeft="true"
+                android:text="Name"
+                android:textSize="12dp"
+                android:textColor="#000000"
+                />
+             <TextView
+                 android:layout_marginLeft="10dp"
+                 android:layout_below="@+id/name"
+                 android:layout_width="100dp"
+                 android:layout_height="wrap_content"
+                 android:id="@+id/display_name_textview"
+                 android:paddingLeft="10dp"
+                 android:paddingRight="10dp"
+                 android:paddingTop="10dp"
+                 android:paddingBottom="10dp"
+                 android:text="Name"
+                 android:gravity="center"
+                 android:textColor="#FFFFFF"
+                 android:background="@android:color/darker_gray"
+                 />
+
+
+        <TextView
+            android:layout_marginLeft="55dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:layout_toRightOf="@+id/name"
+            android:layout_toEndOf="@+id/name"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/roll_no"
+            android:text="Roll No"
+            android:textSize="12dp"
+            android:textColor="#000000"
+            />
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:layout_below="@+id/roll_no"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/display_rollno_textview"
+            android:layout_toRightOf="@+id/display_name_textview"
+            android:layout_toEndOf="@+id/display_name_textview"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:text="Roll No"
+            android:gravity="center"
+            android:textColor="#FFFFFF"
+            android:background="@android:color/darker_gray"
+            />
+
+        <TextView
+            android:layout_marginLeft="55dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:layout_toRightOf="@+id/roll_no"
+            android:layout_toEndOf="@+id/roll_no"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/mark"
+            android:text="Mark"
+            android:textSize="12dp"
+            android:textColor="#000000"
+            />
+        <android.support.v7.widget.AppCompatAutoCompleteTextView
+            android:layout_marginLeft="20dp"
+            android:layout_below="@+id/roll_no"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:textColorHighlight="@android:color/black"
+            android:textColorLink="@android:color/black"
+            android:id="@+id/auto_completeTextview_mark"
+            android:layout_toRightOf="@+id/display_rollno_textview"
+            android:layout_toEndOf="@+id/display_rollno_textview"
+            android:numeric="integer"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:gravity="center"
+            android:textColor="#000000"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/display_name_textview"
+            android:src="@drawable/first"
+            android:id="@+id/previous_student"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:clickable="true"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Absent"
+            android:layout_marginLeft="5dp"
+            android:id="@+id/skip_button"
+            android:textColor="@android:color/white"
+            android:background="@android:color/darker_gray"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:layout_alignBottom="@+id/previous_student"
+            android:layout_alignStart="@+id/roll_no" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/last"
+            android:id="@+id/next_student"
+            android:layout_marginLeft="10dp"
+            android:clickable="true"
+            android:layout_alignBottom="@+id/skip_button"
+            android:layout_alignStart="@+id/auto_completeTextview_mark" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/last"
+            android:id="@+id/submit"
+            android:visibility="gone"
+            android:text="Submit"
+            android:textColor="#000000"
+            android:textSize="14dp"
+            android:layout_marginLeft="10dp"
+            android:clickable="true"
+            android:layout_alignBottom="@+id/skip_button"
+            android:layout_alignStart="@+id/auto_completeTextview_mark" />
+
+    </RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</RelativeLayout>

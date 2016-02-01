@@ -1,0 +1,61 @@
+<resources>
+    <string name="app_name">Marksheet</string>
+
+    <string-array name="classname">
+        <item>class</item>
+        <item>Pre KG</item>
+        <item>LKG</item>
+        <item>UKG</item>
+        <item>I</item>
+        <item>II</item>
+        <item>III</item>
+        <item>IV</item>
+        <item>V</item>
+        <item>VI</item>
+        <item>VII</item>
+        <item>VIII</item>
+        <item>IX</item>
+        <item>X</item>
+        <item>XI</item>
+        <item>XII</item>
+        <item>All</item>
+    </string-array>
+    <string-array name="section">
+        <item>section</item>
+        <item>A</item>
+        <item>B</item>
+        <item>C</item>
+        <item>D</item>
+    </string-array>
+    <string-array name="exam_type">
+        <item>exam type</item>
+        <item>Term 1</item>
+        <item>Term 2 </item>
+        <item>Term 3</item>
+        <item>Term 4</item>
+        <item>Term 5</item>
+        <item>Term 6</item>
+        <item>Term 7</item>
+        <item>Term 8</item>
+        <item>Quartely Exam</item>
+        <item>Halfearly</item>
+        <item>Annual Exam</item>
+    </string-array>
+    <string-array name="Grade_system">
+        <item>Grade system</item>
+        <item>Grade</item>
+        <item>Marks</item>
+        <item>Percentage</item>
+    </string-array>
+    <string-array name="marks_list">
+        <item>marks</item>
+        <item>25</item>
+        <item>40</item>
+        <item>50</item>
+        <item>75</item>
+        <item>100</item>
+        <item>150</item>
+        <item>200</item>
+
+    </string-array>
+</resources>
